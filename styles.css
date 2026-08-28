@@ -9,3 +9,15 @@ html {
 h2 {
     color: white;
 }
+.boiteBas {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    text-align: left;
+    font-size: 10px;
+}
+.boiteBasH1 {
+    text-align: left;
+}
