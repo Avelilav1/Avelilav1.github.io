@@ -1,9 +1,9 @@
 console.log("test reussi ")
 
-function afficherSF(){
+function afficherSF() {
     let elem = document.getElementById("objetsSF");
 
-    if (elem.style.display == "none"){
+    if (elem.style.display == "none") {
         elem.style.display = "block";
     } else {
         elem.style.display = "none";
@@ -30,7 +30,7 @@ function afficherPageImg(img) {
 
     console.log(img);
 
-    if (pageObjet.style.display == "none"){
+    if (pageObjet.style.display == "none") {
         pageObjet.style.display = "flex";
         document.querySelector('#imageConcernee').src = lienImage;
         document.querySelector('#nomObjet').textContent = nomObjet
@@ -38,8 +38,23 @@ function afficherPageImg(img) {
     } else {
         pageObjet.style.display = "none";
     }
-   
+
+
+    if (img.alt == "1") {
+        let tablimg1 = ["assets/imageTest.webp", "assets/armenie1.jpg", "assets/armenie2.jpg"];
+        let i = 0;
+        let button = document.getElementById("buttonS");
+        let imgAct = document.getElementById("imageConcernee");
+        button.addEventListener("click", function () {
+            i = i + 1;
+            if (i >= tablimg1.length) {
+                i = 0;
+            }
+            imgAct.src = tablimg1[i];
+        })
+    }
 }
 function retour() {
     pageObjet.style.display = "none";
 }
+
