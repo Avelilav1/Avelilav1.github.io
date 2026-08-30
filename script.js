@@ -1,7 +1,20 @@
 console.log("test reussi ")
 
+let descriptionStationSpatiale = ""
+let lienStationSpatiale = "assets/scifiship_final.blend"
+
 function afficherSF() {
     let elem = document.getElementById("objetsSF");
+
+    if (elem.style.display == "none") {
+        elem.style.display = "block";
+    } else {
+        elem.style.display = "none";
+    }
+}
+
+function afficherAutre() {
+    let elem = document.getElementById("objetsAutres");
 
     if (elem.style.display == "none") {
         elem.style.display = "block";
@@ -40,21 +53,36 @@ function afficherPageImg(img) {
     }
 
 
-    if (img.alt == "1") {
-        let tablimg1 = ["assets/imageTest.webp", "assets/armenie1.jpg", "assets/armenie2.jpg"];
-        let i = 0;
-        let button = document.getElementById("buttonS");
-        let imgAct = document.getElementById("imageConcernee");
-        button.addEventListener("click", function () {
-            i = i + 1;
-            if (i >= tablimg1.length) {
-                i = 0;
-            }
-            imgAct.src = tablimg1[i];
-        })
+    let description = document.getElementById("descriptionObjet");
+    let lien = document.getElementById("lienSS");
+    console.log(lien);
+    console.log(lienStationSpatiale);
+
+
+        if (img.alt == "1") {
+            let tablimg1 = ["assets/scifiship_image1.png", "assets/scifiship_image2.png"];
+            let i = 0;
+            let button = document.getElementById("buttonS");
+            let imgAct = document.getElementById("imageConcernee");
+            button.addEventListener("click", function () {
+                i = i + 1;
+                if (i >= tablimg1.length) {
+                    i = 0;
+                }
+                imgAct.src = tablimg1[i];
+            })
+
+            description.textContent = descriptionStationSpatiale;
+            lien.href = lienStationSpatiale;
+            console.log(lien.href);
+        } else {
+            lien.href = "#";
+        }
     }
-}
+
 function retour() {
     pageObjet.style.display = "none";
+    lien.href = "#";
 }
+
 

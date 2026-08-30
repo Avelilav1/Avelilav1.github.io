@@ -18,8 +18,8 @@
         <div class="affichageSF">
             <div class="objets">
                 <div>
-                    <img src="assets/imageTest.webp" alt="1" height="100" width="auto">
-                    <p>Objet1</p>
+                    <img src="assets/scifiship_image1.png" alt="1" height="100" width="auto">
+                    <p>Station Spatiale</p>
                 </div>
                 <div>
                     <img src="assets/imageTest.webp" alt="2" height="100" width="auto">
@@ -36,6 +36,29 @@
 
     </div>
 
+    <button onclick="afficherAutre()">Autre</button>
+    <div id="objetsAutres" style="display: none;">
+        <div class="affichageAutre">
+            <div class="objets">
+                <div>
+                    <img src="assets/imageTest.webp" alt="11" height="100" width="auto">
+                    <p>Objet1</p>
+                </div>
+                <div>
+                    <img src="assets/imageTest.webp" alt="12" height="100" width="auto">
+                    <p>Objet2</p>
+                </div>
+                <div>
+                    <img src="assets/imageTest.webp" alt="13" height="100" width="auto">
+                    <p>Objet3</p>
+                </div>
+            </div>
+
+            <button onclick="afficherAutre()">Retour</button>
+        </div>
+
+    </div>
+
     <div id="pageObjet" style="display: none;">
         <div class="titreImage">
             <h2><span id="nomObjet"></span></h2>
@@ -45,9 +68,9 @@
             <button id="buttonS" type="button">></button>
         </div>
         <div>
-            <p>Description objet</p>
-            <a href="assets/imageTest.webp" download>
-                Télécharger le document.
+            <p><span id="descriptionObjet"></span></p>
+            <a id="lienSS" href="#" download>
+                Télécharger le document en .blend.
             </a>
         </div>
         <div class="boutonRetour">
