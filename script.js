@@ -1,6 +1,6 @@
 console.log("test reussi ")
 
-let descriptionStationSpatiale = ""
+let descriptionStationSpatiale = "This is an ultra-realistic spaceship that took many hours of hardwork and passion. We're hoping that you'll like this model, feel free to send some love to Avelilav1 who coded this site and to Mineki who created this 3D model."
 let lienStationSpatiale = "assets/scifiship_final.blend"
 
 function afficherSF() {
@@ -77,6 +77,7 @@ function afficherPageImg(img) {
             console.log(lien.href);
         } else {
             lien.href = "#";
+            description.textContent = "";
         }
     }
 

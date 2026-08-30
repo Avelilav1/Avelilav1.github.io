@@ -72,6 +72,10 @@ h2 {
 
     padding-top: 40px;
 }
+.elementsDeTexte {
+    padding-left: 20px;
+}
+
 .titreImage {
     position: absolute;
     top: -8px;
