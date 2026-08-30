@@ -70,3 +70,18 @@ h2 {
     bottom: 60px;
     right: 10px;
 }
+#buttonS {
+    position: relative;
+    bottom: 200px;
+    right: 33px;
+    font-size: 25px;
+    background-color: rgba(116, 114, 114, 0.153);
+    border-radius: 50%;
+    border: none;
+
+    transition-duration: 0.4s;
+
+}
+#buttonS:hover{
+    background-color: rgba(116, 114, 114, 0.51);
+}
