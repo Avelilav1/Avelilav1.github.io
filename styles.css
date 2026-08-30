@@ -75,6 +75,8 @@ h2 {
     gap: 20px;
 
     padding-top: 40px;
+
+    overflow-y: auto;
 }
 .elementsDeTexte {
     padding-left: 20px;
