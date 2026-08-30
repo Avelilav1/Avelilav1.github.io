@@ -32,6 +32,7 @@ h2 {
     height: 100%;
     color: white;
     z-index: 2;
+    min-height: 100vh;
 
     background-color: black;
 
@@ -45,6 +46,7 @@ h2 {
     height: 100%;
     color: white;
     z-index: 2;
+    min-height: 100vh;
 
     background-color: black;
 
