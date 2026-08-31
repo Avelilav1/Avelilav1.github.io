@@ -13,7 +13,22 @@
 
     <h1>SiteVIVI</h1>
     <h2>De nouveaux produits arrivent bientôt...</h2>
-    <button onclick="afficherSF()">Science-Fiction</button>
+
+    <div class="boutonsCollection">
+        <div class="boutonsCollectionsLigne1">
+            <button class="boutonSciFi" onclick="afficherSF()">Science-Fiction</button>
+            <button onclick="afficherAutre()">Autre</button>
+            <button>Autre 2</button>
+        </div>
+        <div class="boutonsCollectionsLigne2">
+            <button>Autre 3</button>
+            <button>Autre 4</button>
+            <button>Autre 5</button>
+        </div>
+    </div>
+
+
+
     <div id="objetsSF" style="display: none;">
         <div class="affichageSF">
             <div class="objets">
@@ -36,7 +51,7 @@
 
     </div>
 
-    <button onclick="afficherAutre()">Autre</button>
+
     <div id="objetsAutres" style="display: none;">
         <div class="affichageAutre">
             <div class="objets">

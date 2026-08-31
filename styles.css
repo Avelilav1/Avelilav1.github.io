@@ -3,15 +3,19 @@ h1 {
     text-align: center;
 
 }
+
 html {
     background-color: black;
 }
+
 body {
     color: white;
 }
+
 h2 {
     color: white;
 }
+
 .boiteBas {
     position: fixed;
     bottom: 0;
@@ -21,12 +25,14 @@ h2 {
     text-align: left;
     font-size: 15px;
 }
+
 .boiteBasH1 {
     text-align: left;
 }
+
 .affichageSF {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -38,9 +44,10 @@ h2 {
 
     overflow-y: auto;
 }
+
 .affichageAutre {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -52,6 +59,7 @@ h2 {
 
     overflow-y: auto;
 }
+
 .objets {
     display: flex;
     flex-direction: row;
@@ -59,6 +67,7 @@ h2 {
     justify-content: space-around;
     text-align: center;
 }
+
 #pageObjet {
     position: fixed;
     top: 0;
@@ -72,7 +81,7 @@ h2 {
 
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     text-align: start;
     gap: 20px;
 
@@ -80,6 +89,7 @@ h2 {
 
     overflow-y: auto;
 }
+
 .elementsDeTexte {
     padding-left: 20px;
 }
@@ -88,11 +98,13 @@ h2 {
     position: absolute;
     top: -8px;
 }
+
 .boutonRetour {
     position: absolute;
     bottom: 60px;
     right: 10px;
 }
+
 #buttonS {
     position: relative;
     bottom: 200px;
@@ -105,9 +117,34 @@ h2 {
     transition-duration: 0.4s;
 
 }
-#buttonS:hover{
+
+#buttonS:hover {
     background-color: rgba(116, 114, 114, 0.51);
 }
+
 .lienSS {
     color: rgb(41, 84, 240);
+}
+
+.boutonsCollection{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.boutonsCollectionsLigne1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.boutonsCollectionsLigne2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.boutonsCollection button {
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: rgb(8, 163, 8);
+    border: solid black;
 }
