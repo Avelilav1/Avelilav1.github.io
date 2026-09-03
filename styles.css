@@ -1,19 +1,19 @@
 h1 {
-    color: rgb(8, 163, 8);
+    color: #d1bd19;
     text-align: center;
 
 }
 
 html {
-    background-color: black;
+    background-color: #00592e;
 }
 
 body {
-    color: white;
+    color: #ffb852;
 }
 
 h2 {
-    color: white;
+    color: #ffb852;
 }
 
 .boiteBas {
@@ -145,6 +145,6 @@ h2 {
 .boutonsCollection button {
     font-size: 30px;
     border-radius: 10px;
-    background-color: rgb(8, 163, 8);
+    background-color: #328e13;
     border: solid black;
 }
