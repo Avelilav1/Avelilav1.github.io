@@ -59,6 +59,7 @@ h2 {
 .elementsPageObjet {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .elementsDeTexte {
     padding-left: 20px;
