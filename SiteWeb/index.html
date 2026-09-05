@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Les objets 3D de VIVI</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Les objets 3D de VIVI</h1>
+    <h2>De nouveaux produits arrivent bientôt...</h2>
+
+    <div class="boutonsCollection">
+        <div class="boutonsCollectionsLigne1">
+            <button class="boutonSciFi" onclick="afficherSF()">Science-Fiction</button>
+            <button onclick="afficherAutre()">Autre</button>
+            <button>Autre 2</button>
+        </div>
+        <div class="boutonsCollectionsLigne2">
+            <button>Autre 3</button>
+            <button>Autre 4</button>
+            <button>Autre 5</button>
+        </div>
+    </div>
+
+
+
+    <div id="objetsSF" style="display: none;">
+        <div class="affichageSF">
+            <div class="objets">
+                <div>
+                    <img src="assets/scifiship_image1.png" alt="1" height="100" width="auto">
+                    <p>Station Spatiale</p>
+                </div>
+                <div>
+                    <img src="assets/imageTest.webp" alt="2" height="100" width="auto">
+                    <p>Objet2</p>
+                </div>
+                <div>
+                    <img src="assets/imageTest.webp" alt="3" height="100" width="auto">
+                    <p>Objet3</p>
+                </div>
+            </div>
+
+            <button onclick="afficherSF()">Retour</button>
+        </div>
+
+    </div>
+
+
+    <div id="objetsAutres" style="display: none;">
+        <div class="affichageAutre">
+            <div class="objets">
+                <div>
+                    <img src="assets/imageTest.webp" alt="11" height="100" width="auto">
+                    <p>Objet11</p>
+                </div>
+                <div>
+                    <img src="assets/imageTest.webp" alt="12" height="100" width="auto">
+                    <p>Objet2</p>
+                </div>
+                <div>
+                    <img src="assets/imageTest.webp" alt="13" height="100" width="auto">
+                    <p>Objet3</p>
+                </div>
+            </div>
+
+            <button onclick="afficherAutre()">Retour</button>
+        </div>
+
+    </div>
+
+    <div id="pageObjet" style="display: none;">
+        <div class="elementsPageObjet">
+            <div class="titreImage">
+                <h2><span id="nomObjet"></span></h2>
+            </div>
+            <div>
+                <img id="imageConcernee" src="" alt="Image" height="400" width="auto">
+                <button id="buttonS" type="button">></button>
+            </div>
+            <div class="elementsDeTexte">
+                <p><span id="descriptionObjet"></span></p>
+                <a id="lienSS" href="#" download>
+                    Télécharger le document en .blend.
+                </a>
+            </div>
+            <div class="boutonRetour">
+                <button onclick="retour()">Retour</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="boiteBas">
+        <h1 class="boiteBasH1">Le site :</h1>
+        <h2>Ce site publiera des modèles 3D disponibles gratuitement que vous pourrez ajouter à vos projets.</h2>
+    </div>
+</body>
+
+
+</html>
